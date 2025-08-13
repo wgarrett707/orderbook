@@ -1,0 +1,18 @@
+# Use the latest GCC release Docker environment
+FROM gcc:latest
+
+# Set the working directory inside the container
+WORKDIR /usr/src/benchmark
+
+# Copy the necessary files from the project root
+COPY ./include/ ./include/
+COPY ./src/ ./src/
+
+# Compile the benchmark program, output the executable to the current working directory
+RUN find ./src -type f -name "*.cpp" ! -name "main.cpp" | xargs g++ -o ./benchmark -I./include
+
+# Ensure the 'benchmark' executable is present
+RUN ls -l ./benchmark
+
+# Default command to run the benchmark executable
+CMD ["./benchmark"]

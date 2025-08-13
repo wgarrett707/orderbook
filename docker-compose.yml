@@ -1,0 +1,22 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./src/Dockerfile
+    image: cpp-app
+    command: ./main
+
+  tests:
+    build:
+      context: .
+      dockerfile: ./tests/Dockerfile
+    image: cpp-tests
+    command: ./tests
+
+  benchmark:
+    build:
+      context: .
+      dockerfile: ./src/Dockerfile.benchmark
+    image: cpp-benchmark
+    command: ./benchmark

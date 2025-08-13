@@ -1,0 +1,10 @@
+1,5,100.0,OrderType::MARKET,OrderSide::BUY,DurationType::GOOD_TILL_CANCELLED
+2,10,105.0,OrderType::MARKET,OrderSide::BUY,DurationType::GOOD_TILL_CANCELLED
+3,20,97.5,OrderType::LIMIT,OrderSide::BUY,DurationType::GOOD_TILL_CANCELLED
+4,10,100.0,OrderType::MARKET,OrderSide::SELL,DurationType::GOOD_TILL_CANCELLED
+5,5,102.5,OrderType::MARKET,OrderSide::SELL,DurationType::GOOD_TILL_CANCELLED
+6,100,100.0,OrderType::MARKET,OrderSide::SELL,DurationType::GOOD_TILL_CANCELLED
+7,50,100.0,OrderType::MARKET,OrderSide::BUY,DurationType::GOOD_TILL_CANCELLED
+8,10,110.0,OrderType::MARKET,OrderSide::SELL,DurationType::GOOD_TILL_CANCELLED
+9,10,98.0,OrderType::LIMIT,OrderSide::SELL,DurationType::GOOD_TILL_CANCELLED
+10,5,105.0,OrderType::MARKET,OrderSide::SELL,DurationType::GOOD_TILL_CANCELLED

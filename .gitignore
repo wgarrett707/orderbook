@@ -1,0 +1,4 @@
+bin/*
+.vscode/*
+app/app/__pycache__/*
+frontend/node_modules/*
